@@ -17,7 +17,7 @@
     vertical-align: middle;
     text-align: center;
 }
-.pwhid{
+.pwhid{ 
     font-family:'raleway'sans-serif;
     color: #6e7882;
 }
@@ -45,4 +45,11 @@
     margin: 0 auto;
     position: relative;
     text-align: center;
+}
+
+
+
+.buttonhigh:hover{
+    background-color:gold;
+    
 }
