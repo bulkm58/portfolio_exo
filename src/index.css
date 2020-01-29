@@ -1,89 +1,61 @@
-.wihdsect{
-    background-color: #f5f5f5;
+
+
+.maProgression {
+    margin: 50px auto;
+    text-align: center;
 }
-.space-70{
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.section-title{
-    color: #37414c;
-    font-size: 36px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-}
-.title-wihd{
+.maProgression > .loader {
+    color: #4cd964;
     display: inline-block;
+    font-family: monospace;
+    font-weight: bolder;
+    margin: 50px;
+    position: relative;
+    text-align: center;
+}
+.maProgression > .loader:after {
+    content: attr(data-percent);
+    font-size: 12px;
+    left: 0;
+    line-height: 12px;
+    margin-top: -6px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     width: 100%;
-    vertical-align: middle;
-    text-align: center;
 }
-.pwhid{ 
-    font-family:'raleway'sans-serif;
-    color: #6e7882;
-}
-.space-20{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    
-}
-.my-work-icon{
-    border: 1px solid #d2dce6;
-    border-radius: 4em;
-    display: inline-block;
-    font-size: 34px;
+.maProgression svg {
     height: 100px;
-    line-height: 100px;
-    position: relative;
-    text-align: center;
     width: 100px;
-    margin-bottom: 30px;
 }
-
-
-.pointille{
-    font-size: 14px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
+.maProgression svg:last-child {
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
-
-
-
-.buttonhigh:hover{
-    background-color:gold;
-    
+.maProgression svg:last-child circle {
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 629;
+    stroke-width: 12;
+    -webkit-animation: maProgression-loader 2.4s 1;
+    animation: maProgression-loader 2.4s 1;
 }
-
-
-.gallery {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    column-width: 33%; }
-    .gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease; }
-    .gallery .animation {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-    
-    @media (max-width: 450px) {
-    .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-    }
-    }
-    
-    @media (max-width: 400px) {
-    .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-    }
-    }
+@-webkit-keyframes maProgression-loader {
+    0% {
+        stroke-dashoffset: 0;
+   }
+}
+@-moz-keyframes maProgression-loader {
+    0% {
+        stroke-dashoffset: 0;
+   }
+}
+@keyframes maProgression-loader {
+    0% {
+        stroke-dashoffset: 0;
+   }
+}
