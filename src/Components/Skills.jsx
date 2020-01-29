@@ -1,54 +1,177 @@
-import React, {useEffect}  from 'react' ;
+import React, {useEffect} from 'react';
 import $ from 'jquery';
 
 
-
-const Skills = () => { 
-
+const Skills = () => {
 
 
-    useEffect (()=>{
-
-
-        $('.progress > .loader').each(function() {
-            var $this = $(this);
-            var svg = '<svg viewBox="-10 -10 220 220"><circle cx="0" cy="0" fill="#eee" r="100" stroke="#4cd964" stroke-width="10" transform="translate(100, 100)"></circle></svg>';
-            
-            $this.append(svg, svg).find('>svg').last().find ('>circle').attr('stroke-dashoffset', -Math.round((parseInt($this.data('percent').replace('%', ''))*629)/100));
-          });
+    useEffect ((each_bar_width) =>{
+        $(function () { 
+            $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
+          });  
           
+          
+            $(".progress-bar").each(function(){
+              each_bar_width = $(this).attr('aria-valuenow');
+              $(this).width(each_bar_width + '%');
+            });
+                 
+           
     })
-    
-    
 
 
 
-    return(
-<section className="bgskills ">
-    <div className="text-light offset-8 text-center space-70 mr-5">
-        <h2 className="">About me & Expertise</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim delectus at magnam error maxime minima vel sunt modi, voluptate necessitatibus adipisci? Aperiam qui error repellat id eius, aut impedit corporis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deserunt fuga? Veniam eligendi optio laudantium provident, odit deleniti quo, ipsa earum rem fugiat repudiandae ut adipisci quidem architecto officia inventore.
+
+
+
+
+
+
+    return (
+        <div className="bgskills ">
+            <div className="text-light offset-8 text-center space-70 mr-5">
+                <h2 className="">About me & Expertise</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim delectus at magnam error maxime minima vel sunt modi, voluptate necessitatibus adipisci? Aperiam qui error repellat id eius, aut impedit corporis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deserunt fuga? Veniam eligendi optio laudantium provident, odit deleniti quo, ipsa earum rem fugiat repudiandae ut adipisci quidem architecto officia inventore.
         </p>
-    </div>
-    <div class="maProgression">
-        <div class="loader" data-percent="20%"></div>
-        <div class="loader" data-percent="40%"></div>
-        <div class="loader" data-percent="60%"></div>
-        <div class="loader" data-percent="80%"></div>
-        <div class="loader" data-percent="100%"></div>
-    </div>
-    
+            </div>
+            
+
+            <div class="flex-wrapper mt-5">
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart orange">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="30, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage"> Bash 30%</text>
+    </svg>
+  </div>
+
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart purple">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="65, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">HTML 30%</text>
+    </svg>
+  </div>
+
+  
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart red">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">React.js 60%</text>
+    </svg>
+  </div>
 
 
- 
-        </section>
+
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart gold">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage">Laravel 60%</text>
+    </svg>
+  </div>
+
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart black">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage text-center">Javascrpit 60%</text>
+    </svg>
+  </div>
+
+
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart green">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="60, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage"> SCSS 60%</text>
+    </svg>
+  </div>
+
+  <div class="single-chart">
+    <svg viewBox="0 0 36 36" class="circular-chart blue">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        stroke-dasharray="90, 100"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <text x="18" y="20.35" class="percentage"> EMMET 90%</text>
+    </svg>
+  </div>
+</div>
+                </div>
+            
+
+
+
+
+
+            )
         
-
-    )
-
-}
-
-
-
+        }
+        
+        
+        
 export default Skills; 
