@@ -5,6 +5,7 @@ import Whid from './Components/Wihd.jsx'
 import Rworks from './Components/Rworks.jsx'
 import Skills from './Components/Skills.jsx';
 import Wcidfy from './Components/Wcidfy.jsx';
+import Footer from './Components/Footer.jsx';
 
 
 
@@ -22,9 +23,7 @@ const App = () => {
             <Rworks />
             <Skills />
             <Wcidfy />
-            
-
-
+            <Footer />
 
         </div>
 

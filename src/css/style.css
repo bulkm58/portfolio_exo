@@ -22,7 +22,7 @@
 }
 
 .pwhid {
-  font-family: "raleway" sans-serif;
+  font-family: "raleway"sans-serif;
   color: #6e7882;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .my-work-icon {
-  border: 1px solid #d2dce6;
+  border: 1px solid black;
   border-radius: 4em;
   display: inline-block;
   font-size: 34px;
@@ -85,18 +85,21 @@
     column-width: 100%;
   }
 }
+
 @media (max-width: 400px) {
   .btn.filter {
     padding-left: 1.1rem;
     padding-right: 1.1rem;
-  }
+  };
 }
+
 .bgskills {
   background-image: url("../img/Workharder.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   box-shadow: 0px 15px 114px 55px #092363;
 }
+
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
@@ -104,7 +107,7 @@
 
 .single-chart {
   width: 15%;
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
 .circular-chart {
@@ -136,17 +139,21 @@
 .circular-chart.orange .circle {
   stroke: orangered;
 }
+
 .circular-chart.purple .circle {
   stroke: purple;
 }
+
 .circular-chart.red .circle {
-  stroke:red;
+  stroke: red;
 }
+
 .circular-chart.gold .circle {
   stroke: gold;
 }
+
 .circular-chart.black .circle {
-  stroke:black;
+  stroke: black;
 }
 
 .circular-chart.green .circle {
@@ -158,17 +165,34 @@
 }
 
 .percentage {
-  fill:white;
+  fill: white;
   font-family: sans-serif;
   font-size: 4px;
   text-anchor: middle;
-  
+
 }
-.bgWcidfy{
+
+.bgWcidfy {
   background-image: url(../img/clavier.jpg);
-  background-size: 100% ;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   box-shadow: 0px 40px 150px 15px white;
 }
 
+.space-bottom-15{
+  padding-bottom: 15px;
+}
 
+
+.footerpol {
+  color: #37414c;
+}
+.footerpar{
+  color: black;
+  border-left: 2px dotted #cccccc;
+}
+
+.mesUls{
+  list-style: none;
+}

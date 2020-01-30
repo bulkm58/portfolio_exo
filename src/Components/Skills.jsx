@@ -4,7 +4,6 @@ import $ from 'jquery';
 
 const Skills = () => {
 
-
     useEffect ((each_bar_width) =>{
         $(function () { 
             $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
@@ -23,23 +22,20 @@ const Skills = () => {
 
 
 
-
-
-
-
     return (
         <div className="bgskills ">
-            <div className="text-light offset-8 text-center space-70 mr-5 my-auto">
+          <div className="row">
+            <div className="text-light offset-lg-8 col-lg-4 col-md-12 text-center space-70 my-auto">
                 <h2 className="">About me & Expertise</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim delectus at magnam error maxime minima vel sunt modi, voluptate necessitatibus adipisci? Aperiam qui error repellat id eius, aut impedit corporis.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deserunt fuga? Veniam eligendi optio laudantium provident, odit deleniti quo, ipsa earum rem fugiat repudiandae ut adipisci quidem architecto officia inventore.
         </p>
             </div>
-            
+            </div>
 
-            <div class="flex-wrapper">
-  <div class="single-chart">
-    <svg viewBox="0 0 36 36" class="circular-chart orange">
+            <div class="row">
+  <div class="single-chart col-lg-3 col-xs-12">
+    <svg viewBox="0 0 36 36" class='circular-chart orange'>
       <path class="circle-bg"
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
@@ -51,12 +47,12 @@ const Skills = () => {
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
       />
-      <text x="18" y="20.35" class="percentage"> Bash 30%</text>
+      <text x="18" y="20.35" className="percentage"> Bash 30%</text>
     </svg>
   </div>
 
-  <div class="single-chart">
-    <svg viewBox="0 0 36 36" class="circular-chart purple">
+  <div class="single-chart col-lg-3 col-xs-12">
+    <svg viewBox="0 0 36 36" className="circular-chart purple">
       <path class="circle-bg"
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
@@ -73,7 +69,7 @@ const Skills = () => {
   </div>
 
   
-  <div class="single-chart">
+  <div class="single-chart col-lg-3 col-xs-12">
     <svg viewBox="0 0 36 36" class="circular-chart red">
       <path class="circle-bg"
         d="M18 2.0845
@@ -92,7 +88,7 @@ const Skills = () => {
 
 
 
-  <div class="single-chart">
+  <div class="single-chart col-lg-3 col-xs-12">
     <svg viewBox="0 0 36 36" class="circular-chart gold">
       <path class="circle-bg"
         d="M18 2.0845
@@ -109,7 +105,7 @@ const Skills = () => {
     </svg>
   </div>
 
-  <div class="single-chart">
+  <div class="single-chart col-lg-3 col-xs-12">
     <svg viewBox="0 0 36 36" class="circular-chart black">
       <path class="circle-bg"
         d="M18 2.0845
@@ -127,7 +123,7 @@ const Skills = () => {
   </div>
 
 
-  <div class="single-chart">
+  <div class="single-chart col-lg-3 col-xs-12">
     <svg viewBox="0 0 36 36" class="circular-chart green">
       <path class="circle-bg"
         d="M18 2.0845
@@ -144,7 +140,7 @@ const Skills = () => {
     </svg>
   </div>
 
-  <div class="single-chart">
+  <div class="single-chart col-lg-3 col-xs-12">
     <svg viewBox="0 0 36 36" class="circular-chart blue">
       <path class="circle-bg"
         d="M18 2.0845
