@@ -93,9 +93,8 @@
 }
 .bgskills {
   background-image: url("../img/Workharder.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
-  height: 130vh;
   box-shadow: 0px 15px 114px 55px #092363;
 }
 .flex-wrapper {
@@ -165,3 +164,11 @@
   text-anchor: middle;
   
 }
+.bgWcidfy{
+  background-image: url(../img/clavier.jpg);
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  box-shadow: 0px 40px 150px 15px white;
+}
+
+

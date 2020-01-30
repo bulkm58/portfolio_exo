@@ -4,6 +4,7 @@ import Site from './Components/Site.jsx'
 import Whid from './Components/Wihd.jsx'
 import Rworks from './Components/Rworks.jsx'
 import Skills from './Components/Skills.jsx';
+import Wcidfy from './Components/Wcidfy.jsx';
 
 
 
@@ -20,7 +21,7 @@ const App = () => {
             <Whid />
             <Rworks />
             <Skills />
-            
+            <Wcidfy />
             
 
 

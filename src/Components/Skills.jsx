@@ -29,7 +29,7 @@ const Skills = () => {
 
     return (
         <div className="bgskills ">
-            <div className="text-light offset-8 text-center space-70 mr-5">
+            <div className="text-light offset-8 text-center space-70 mr-5 my-auto">
                 <h2 className="">About me & Expertise</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim delectus at magnam error maxime minima vel sunt modi, voluptate necessitatibus adipisci? Aperiam qui error repellat id eius, aut impedit corporis.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deserunt fuga? Veniam eligendi optio laudantium provident, odit deleniti quo, ipsa earum rem fugiat repudiandae ut adipisci quidem architecto officia inventore.
@@ -37,7 +37,7 @@ const Skills = () => {
             </div>
             
 
-            <div class="flex-wrapper mt-5">
+            <div class="flex-wrapper">
   <div class="single-chart">
     <svg viewBox="0 0 36 36" class="circular-chart orange">
       <path class="circle-bg"
