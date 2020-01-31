@@ -8,7 +8,7 @@ const Wcidfy = () => {
 
     return (
 
-        <section className="bgWcidfy ">
+        <section id="Wcidfy" className="bgWcidfy ">
 
             <div className="row container">
                 

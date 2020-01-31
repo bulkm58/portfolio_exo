@@ -4,7 +4,7 @@ import React from 'react'
 const Whid = () => {
 
     return (
-        <section className="wihdsect space-70">
+        <section id="Wihd" className="wihdsect space-70">
             <div className="container">
                 <div className="title-wihd">
                     <h2 className="section-title">What i have done</h2>
@@ -21,7 +21,7 @@ const Whid = () => {
                         <span className="fa fa-circle text-danger"> </span>
                     </div>
                     <div className="space-20">
-                        <h2>7 months experiences</h2>
+                        <h2>7 months</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, earum?</p>
                     </div>
 

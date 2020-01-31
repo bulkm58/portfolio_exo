@@ -23,7 +23,7 @@ const Skills = () => {
 
 
     return (
-        <div className="bgskills ">
+        <div id="Skills" className="bgskills ">
           <div className="row">
             <div className="text-light offset-lg-8 col-lg-4 col-md-12 text-center space-70 my-auto">
                 <h2 className="">About me & Expertise</h2>

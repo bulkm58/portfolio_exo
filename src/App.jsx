@@ -6,6 +6,7 @@ import Rworks from './Components/Rworks.jsx'
 import Skills from './Components/Skills.jsx';
 import Wcidfy from './Components/Wcidfy.jsx';
 import Footer from './Components/Footer.jsx';
+import Contact from './Components/Contact.jsx';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
             <Rworks />
             <Skills />
             <Wcidfy />
+            <Contact/>
             <Footer />
 
         </div>

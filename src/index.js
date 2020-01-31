@@ -9,6 +9,7 @@ import 'popper.js/dist/popper.js';
 import 'bootstrap/dist/js/bootstrap.js';
 import '@fortawesome/fontawesome-free/css/all.css'
 
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 
